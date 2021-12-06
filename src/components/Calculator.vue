@@ -36,7 +36,12 @@
     },
     methods: {
       clear() {
-        this.display=0;
+        this.display = 0;
+      },
+      sign() {
+        this.display = this.display < 0 
+                ? (this.display = this.display - this.display *2 )
+                : (this.display = this.display - this.display *2 );
       },
       // append(number) {
       //   if (this.operatorClicked === true) {}
@@ -56,7 +61,7 @@
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(10vh, auto);
+  grid-auto-rows: minmax(100px, auto);
   box-shadow: -3px 3px 15px rgba(17,17,17,0.4);
   line-height: 10vh;
   color:rgb(239, 71, 111) ;
@@ -71,6 +76,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 1rem;
+  text-align: right;
+  padding-right:40px;
 }
 .zero {
   grid-column: 1 / 3;
@@ -111,6 +118,7 @@
 @media only screen and (min-width: 1024px) {
   .calculator {
     width: 32vw;
+    line-height: 14vh;
   }
 }
 @media only screen and (min-width: 1280px) {
