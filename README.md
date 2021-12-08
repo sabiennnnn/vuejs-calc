@@ -1,24 +1,10 @@
-# vuejs-calc
+# vue.js calculator
+Simple calculator made with Vue.js
 
-## Project setup
-```
-yarn install
-```
+## Project technologies
+- Vue.js
+- Express static server
+- Heroku via GitHub
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Screenshot
+<img src="./src/assets/screenshot-calc.png" />
