@@ -1,25 +1,27 @@
 <template>
-  <div class='calculator'>
-    <div class="display">{{display}}</div>
-    <div @click='clear' class="button darker">C</div>
-    <div @click='sign' class="button darker">+/-</div>
-    <div @click="percent" class="button darker">%</div>
-    <div @click='divide' class="button operator">+</div>
-    <div @click='append(7)' class="button">7</div>
-    <div @click='append(8)' class="button">8</div>
-    <div @click='append(9)' class="button">9</div>
-    <div @click='multiply' class="button operator">x</div>
-    <div @click='append(4)' class="button">4</div>
-    <div @click='append(5)' class="button">5</div>
-    <div @click='append(6)' class="button">6</div>
-    <div @click='substract' class="button operator">-</div>
-    <div @click='append(1)' class="button">1</div>
-    <div @click='append(2)' class="button">2</div>
-    <div @click='append(3)' class="button">3</div>
-    <div @click='add' class="button operator">+</div>
-    <div @click='append(0)' class="button zero">0</div>
-    <div @click='decimal' class="button">.</div>
-    <div @click='equal' class="button operator result">=</div>
+<div class="container">
+    <div class='calculator'>
+      <div class="display">{{display}}</div>
+      <div @click='clear' class="button darker">C</div>
+      <div @click='sign' class="button darker">+/-</div>
+      <div @click="percent" class="button darker">%</div>
+      <div @click='divide' class="button operator">+</div>
+      <div @click='append(7)' class="button">7</div>
+      <div @click='append(8)' class="button">8</div>
+      <div @click='append(9)' class="button">9</div>
+      <div @click='multiply' class="button operator">x</div>
+      <div @click='append(4)' class="button">4</div>
+      <div @click='append(5)' class="button">5</div>
+      <div @click='append(6)' class="button">6</div>
+      <div @click='substract' class="button operator">-</div>
+      <div @click='append(1)' class="button">1</div>
+      <div @click='append(2)' class="button">2</div>
+      <div @click='append(3)' class="button">3</div>
+      <div @click='add' class="button operator">+</div>
+      <div @click='append(0)' class="button zero">0</div>
+      <div @click='decimal' class="button">.</div>
+      <div @click='equal' class="button operator result">=</div>
+    </div>
   </div>
 </template>
 
@@ -89,6 +91,9 @@
 </script>
 
 <style scoped>
+.container {
+  padding-top: 10%
+}
 .calculator {
   margin: 0 auto;
   width: 400px;
